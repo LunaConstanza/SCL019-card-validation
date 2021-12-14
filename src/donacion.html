@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image.png" href="imagenes/arbol.png">
+    <title>Ayudando a la Tierra</title>
+    <link rel="stylesheet" href="style.css" />
+  </head> 
+  <body>
+    <div>
+      <header class="container">
+        <nav>
+          <a href="index.html"><img src="imagenes/Logo.png" alt="logo"></a>
+          <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="donacion.html" class="current">DONAR AQUÍ</a></li>
+          </ul></nav>
+      </header>
+      <div class="container">
+        <div class="verde"></div>
+      </div>
+    </div>
+    <main>
+        <section>
+            <h3>¡Diste un gran paso, continua!</h3>
+            <p>Recuerda que con tu aporte estarás contribuyendo a la protección de la flora y fauna chilena. Esta donación se descontará de tu tarjeta una vez al mes. Puedes darte de baja en cualquier momento.</p>
+        </section> 
+          <form id="donation">
+              <div class="box">
+                <h4>Datos personales</h4>
+                <label for="names">Nombres</label>
+                <input type="text" id="names" required><br>
+                <label for="apellido">Apellidos</label>
+                <input type="text" id="apellido" required><br>
+                <label for="rut">Rut</label>
+                <input type="text" id="rut" required><br>
+                <label for="fecha1">F. Nacimiento</label>
+                <input type="date" id="fecha1" required><br>
+                <label for="contacto">N° Contacto</label>
+                <input type="text" id="contacto" required><br>
+                <label for="correo">C. Electrónico</label>
+                <input type="text" id="correo" required>
+              </div>
+              <div class="box">
+                <h4>Modalidad de Aporte</h4>
+                <label for="monto">Monto $</label>
+                <input type="text" id="monto" required><br>
+                <label for="fecha2">F. de cobro</label>
+                <input type="date" id="fecha2" required><br>
+                <label for="number">N° de Tarjeta</label>
+                <input type="text" id="number" required><br>
+                <label for="fecha3">Fecha Exp.</label>
+                <input type="text" id="fecha3" placeholder="00/00" required>
+                <label for="cvc">cvc</label>
+                <input type="text" id="cvc" required><br>
+                <button type="submit">Validar Tarjeta</button>
+                <p id="answerText"></p>
+              </div>
+              <button class="btnPopup" id="btnPopup">REALIZAR DONACIÓN</button>
+          </form>
+        <div class="overlay" id="overlay">
+          <div class="popup" id="popup">
+            <h3>¡Donación realizada con exito!</h3>
+            <h4 id="nameUser"></h4><p>Muchas gracias por tu ayuda, estamos felices de que hayas tomado esta importante decisión que contribuirá a la preservación de nuestros parques, reservas y monumentos nacionales de Chile.<br>Te llegara un correo con toda la información detallada.</p>
+            <a href="index.html">VOLVER</a>
+          </div>
+        </div>
+    </main>
+    <div>
+      <div class="container">
+        <div class="verde"></div>
+      </div>
+      <footer class="container">
+        <a href="index.html"><img src="imagenes/Logo.png" alt="logo"></a>
+        <p>Contáctanos:   9 1234 5678   |   contacto@pachaysiy.com</p>
+      </footer>
+    </div>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
