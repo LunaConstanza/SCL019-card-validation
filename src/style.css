@@ -32,9 +32,11 @@ body {
     height: 100vh;
 }
 header {
+    border-bottom: 12px solid #079215;
+}
+nav {
     width: 100%;
     padding: 0 120px;
-    margin: 0;
     background-color: white;
     height: 65px;
 }
@@ -49,7 +51,6 @@ nav ul {
 }
 nav ul li{
     display: inline-block;
-    margin: 0;
 }
 nav ul li a{
     color: #079215;
@@ -68,13 +69,6 @@ nav ul li a:active{
 nav ul li a.current:link, a.current:visited{
     background-color: #079215;
     color: white;
-}
-.verde{
-    background-color: #079215;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    height: 12px;
 }
 .section1{
     background-image: url(./imagenes/aves.jpg);
@@ -158,6 +152,7 @@ footer{
     margin: 0;
     background-color: white;
     height: 45px;
+    border-top: 12px solid #079215;
 }
 footer a img{
     float: left;

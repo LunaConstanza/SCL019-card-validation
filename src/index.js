@@ -2,6 +2,7 @@ import validator from './validator.js';
 
 const formDon = document.getElementById('donation');
 let card = document.getElementById('number');
+let btnOpenPopup = document.getElementById('btnPopup');
 
 formDon.addEventListener('submit', function(e){
     e.preventDefault();
@@ -10,6 +11,7 @@ formDon.addEventListener('submit', function(e){
     //console.log(finalValidation);
     if (finalValidation==true){
         finalAnswer = 'valida.'
+        btnOpenPopup.removeAttribute('disabled');
     } else {
         finalAnswer = 'invalida. Vuelva a intentarlo'
     }
@@ -19,7 +21,6 @@ formDon.addEventListener('submit', function(e){
 //LINKS
 
 //POPUP
-let btnOpenPopup = document.getElementById('btnPopup');
 let overlay = document.getElementById('overlay');
 let popup = document.getElementById('popup');
 let namesUser = document.getElementById('names');
