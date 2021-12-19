@@ -110,6 +110,7 @@ nav ul li a.current:link, a.current:visited{
     color: #fff;
     background: #079215;
     border-radius: 15px;
+    box-shadow: 2px 2px 5px gray;
 }
 .cont1 a:hover{
     background: #005c09;
@@ -152,7 +153,7 @@ section{
     flex-direction: column;
     gap: 20px 0;
     text-align: left;
-    padding: 20px 120px;
+    padding: 30px 200px;
 }
 section h3{
     font-size: 150%;
@@ -162,21 +163,67 @@ form{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    padding: 0 120px;
-    gap: 0 250px;
+    padding: 10px 200px;
 }
-form h4{
+.box{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+    padding-right: 70px;
+    width: 40%;
+}
+.box h4{
     color: #079215;
     font-size: 110%;
     font-weight: 600;
+    padding-bottom: 10px;
 }
-.box{
-    flex-flow: column wrap;
-    text-align: left;
+.cajita{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 7px 0;
+}
+.cajita input{
+    width: 145px;
+}
+.cajita .mini{
+    width: 80px;
+    height: 21px;
+}
+.btnVal{
+    color: white;
+    background: black;
+    padding: 5px 15px;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+}
+.btnVal:hover{
+    background: #005c09;
+}
+.cajita p{
+    font-weight: 500;
+    font-size: 90%;
+}
+.btnPopup{
+    padding: 15px 25px;
+    margin: 30px;
+    color: white;
+    font-weight: 650;
+    background: #079215;
+    border: 0px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px gray;
+}
+.btnPopup:disabled{
+    background: darkgrey;
+}
+.btnPopup:active{
+    background: #005c09;
 }
 footer{
     padding: 0 120px;
-    bottom: 0;
     background-color: white;
     border-top: 12px solid #079215;
 }
@@ -188,6 +235,11 @@ footer a img{
 footer h5{
     float: right;
     padding: 10px 0;
+}
+.fotBot{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
 }
 /* POP UP */
 .overlay {
@@ -209,29 +261,27 @@ footer h5{
     background: #f8f8f8;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
     border-radius: 3px;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
-    width: 550px;
+    width: 600px;
     transition: .3s ease all;
     transform: scale(0.7);
     opacity: 0;
 }
 .popup h3 {
     color: #079215;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.popup h4{
+#nameUser{
     font-size: 26px;
-    font-weight: 350;
-    padding: 0;
-    margin: 0;
+    font-weight: 400;
+    padding: 10px;
 }
 .popup p{
     font-size: 18px;
-    padding: 0;
-    margin: 0;
+    line-height: 24px;
 }
 .popup a{
     text-decoration: none;
@@ -240,6 +290,7 @@ footer h5{
     color: #fff;
     background: #079215;
     border-radius: 15px;
+    box-shadow: 2px 2px 5px gray;
     font-size: 14px;
     transition: .3s ease all;
 }

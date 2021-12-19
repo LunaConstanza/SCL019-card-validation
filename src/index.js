@@ -17,7 +17,8 @@ formDon.addEventListener('submit', function(e){
     }
     let hiddeNum = validator.maskify(card.value);
     document.getElementById("answerText").innerHTML = 'Su tarjeta ' + hiddeNum + ' es ' + finalAnswer;
-})
+});
+
 //POPUP
 let overlay = document.getElementById('overlay');
 let popup = document.getElementById('popup');
