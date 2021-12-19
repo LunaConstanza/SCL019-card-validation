@@ -1,6 +1,4 @@
-# PACHAYSIY
-
-Ir al sitio[Sitio web final](src/index.html)
+# PACHAYSIY [Ir al sitio web final](src/index.html)
 
 ## Proyecto de Card Validation
 
