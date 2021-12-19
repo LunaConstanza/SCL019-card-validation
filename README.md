@@ -1,6 +1,6 @@
 # PACHAYSIY
 
-<a href="index.html">Ir al sitio PACHAYSIY</a>
+<a href="src/index.html">Ir al sitio PACHAYSIY</a>
 
 ## Proyecto de Card Validation
 
