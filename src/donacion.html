@@ -18,7 +18,7 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="main2">
     <section>
       <h3>¡Diste un gran paso, continua!</h3>
       <p>Ahora solo falta que rellenes los campos a continuación. Recuerda que con tu aporte estarás contribuyendo a la
@@ -26,58 +26,60 @@
         darte de baja en cualquier momento.</p>
     </section>
     <form id="donation">
-      <div class="box">
-        <h4>Datos Personales</h4>
-        <div class="cajita">
-          <label for="names">Nombres</label>
-          <input type="text" id="names" placeholder="Ej: Constanza Luna" required>
+      <div class="donation_box">
+        <div class="box">
+          <h4>Datos Personales</h4>
+          <div class="cajita">
+            <label for="names">Nombres</label>
+            <input type="text" id="names" placeholder="Ej: Constanza Luna" required>
+          </div>
+          <div class="cajita">
+            <label for="apellido">Apellidos</label>
+            <input type="text" id="apellido" placeholder="Ej: Gonzalez Barrera" required>
+          </div>
+          <div class="cajita">
+            <label for="rut">Rut</label>
+            <input type="text" id="rut" placeholder="Ej: 12345678-K" required>
+          </div>
+          <div class="cajita">
+            <label for="fecha1">F. Nacimiento</label>
+            <input type="date" id="fecha1" required>
+          </div>
+          <div class="cajita">
+            <label for="contacto">N° Contacto</label>
+            <input type="number" id="contacto" placeholder="Ej: 9 1234 5678" required>
+          </div>
+          <div class="cajita">
+            <label for="correo">C. Electrónico</label>
+            <input type="text" id="correo" placeholder="Ej: cuenta@correo.cl" required>
+          </div>
         </div>
-        <div class="cajita">
-          <label for="apellido">Apellidos</label>
-          <input type="text" id="apellido" placeholder="Ej: Gonzalez Barrera" required>
-        </div>
-        <div class="cajita">
-          <label for="rut">Rut</label>
-          <input type="text" id="rut" placeholder="Ej: 12345678-K" required>
-        </div>
-        <div class="cajita">
-          <label for="fecha1">F. Nacimiento</label>
-          <input type="date" id="fecha1" required>
-        </div>
-        <div class="cajita">
-          <label for="contacto">N° Contacto</label>
-          <input type="number" id="contacto" placeholder="Ej: 9 1234 5678" required>
-        </div>
-        <div class="cajita">
-          <label for="correo">C. Electrónico</label>
-          <input type="text" id="correo" placeholder="Ej: cuenta@correo.cl" required>
-        </div>
-      </div>
-      <div class="box">
-        <h4>Modalidad de Aporte</h4>
-        <div class="cajita">
-          <label for="monto">Monto $</label>
-          <input type="text" id="monto" placeholder="00000" required>
-        </div>
-        <div class="cajita">
-          <label for="fecha2">F. de cobro</label>
-          <input type="date" id="fecha2" required>
-        </div>
-        <div class="cajita">
-          <label for="number">N° de Tarjeta</label>
-          <input type="text" id="number" placeholder="0000000000000000" required>
-        </div>
-        <div class="cajita">
-          <label for="fecha3">Fecha Exp.</label>
-          <input type="text" class="mini" id="fecha3" placeholder="00/00" required>
-          <label for="cvc">cvc</label>
-          <input type="text" class="mini" id="cvc" placeholder="000" required>
-        </div>
-        <div class="cajita">
-          <button type="submit" class="btnVal">Validar Tarjeta</button><br>
-        </div>
-        <div class="cajita">  
-          <p id="answerText"></p>
+        <div class="box">
+          <h4>Modalidad de Aporte</h4>
+          <div class="cajita">
+            <label for="monto">Monto $</label>
+            <input type="number" id="monto" placeholder="00000" required>
+          </div>
+          <div class="cajita">
+            <label for="fecha2">F. de cobro</label>
+            <input type="date" id="fecha2" required>
+          </div>
+          <div class="cajita">
+            <label for="number">N° de Tarjeta</label>
+            <input type="text" id="number" placeholder="0000000000000000" required>
+          </div>
+          <div class="cajita">
+            <label for="fecha3">Fecha Exp.</label>
+            <input type="text" class="mini" id="fecha3" placeholder="00/00" required>
+            <label for="cvc">cvc</label>
+            <input type="text" class="mini" id="cvc" placeholder="000" required>
+          </div>
+          <div class="cajita">
+            <button type="submit" class="btnVal">Validar Tarjeta</button><br>
+          </div>
+          <div class="cajita">
+            <p id="answerText"></p>
+          </div>
         </div>
       </div>
       <button class="btnPopup" id="btnPopup" disabled>REALIZAR DONACIÓN</button>
